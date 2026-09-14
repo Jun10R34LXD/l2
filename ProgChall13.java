@@ -10,18 +10,18 @@
 import java.util.Scanner;
 public class ProgChall13
 {   public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.println("Enter meal amount: ");
-        double amount = sc.nextDouble();
+        double amount = keyboard.nextDouble();
         final double TAX_RATE = 0.0675;
-        final double TIP_RATE = 0.20;
+        final double TIP_RATE = 0.02;
         //6.75
         //20
         double tax = amount * TAX_RATE;
-        double subt = amount + tax;
-        double tip = subt * TIP_RATE;
-        double total = tip + subt;
+        double subTotal = amount + tax;
+        double tip = subTotal * TIP_RATE;
+        double total = tip + subTotal;
         System.out.printf("%nThe tax is: $%.2f%n", tax);
         System.out.printf("\nTip: $%.2f%n", tip);
         System.out.printf("\nThe meal cost with tax and tip is: $%.2f%n", total);

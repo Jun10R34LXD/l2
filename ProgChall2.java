@@ -11,26 +11,26 @@ import java.util.Scanner;
 public class ProgChall2
 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
-        System.out.println("Enter your first name:  ");
-        String firstname = sc.nextLine();
+        System.out.print("Enter your first name:  ");
+        String firstName = keyboard.nextLine();
         
-        System.out.println("Enter your middle name:  ");
-        String middlename = sc.nextLine();
+        System.out.print("Enter your middle name:  ");
+        String middleName = keyboard.nextLine();
         
-        System.out.println("Enter your last name:  ");
-        String lastname = sc.nextLine();
+        System.out.print("Enter your last name:  ");
+        String lastName = keyboard.nextLine();
         
-        System.out.print("Your full name is: " + firstname + " " + middlename + " " + lastname);
+        System.out.print("Your full name is: " + firstName + " " + middleName + " " + lastName);
         
-        char firstint = firstname.charAt(0);
-        char middleint = middlename.charAt(0);
-        char lastint = lastname.charAt(0);
-        System.out.println("\nYour initials are: " + firstint + middleint + lastint );
+        char firstInt = firstName.charAt(0);
+        char middleInt = middleName.charAt(0);
+        char lastInt = lastName.charAt(0);
+        System.out.println("\nYour initials are: " + firstInt + middleInt + lastInt );
         
         
-        sc.close();
+        keyboard.close();
         
     }
     

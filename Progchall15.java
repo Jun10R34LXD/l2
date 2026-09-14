@@ -11,15 +11,15 @@
 import java.util.Scanner;
 public class Progchall15
 {   public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.println("Enter the amount of stocks purchased: ");
-        int shares = sc.nextInt();
+        int shares = keyboard.nextInt();
         System.out.println("Enter price per share");
-        double stockprice = sc.nextDouble();
-        double commissionrate = 0.02;
-        double paid = shares * stockprice;
-        double commission = paid * commissionrate;
+        double stockPrice = keyboard.nextDouble();
+        final double commissionRate = 0.02;
+        double paid = shares * stockPrice;
+        double commission = paid * commissionRate;
         double total = paid + commission;
         
         System.out.printf("%nThe amount paid for stock: $%.2f%n", paid);

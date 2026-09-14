@@ -12,19 +12,14 @@ import java.util.Scanner;
 public class ProgChall12
 {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.println("Enter a city: ");
-        String cityname = sc.nextLine();
-        
-        char firstc = cityname.charAt(0);
-        int letnum = cityname.length();
-        String lowerc = cityname.toLowerCase();
-        String upperc = cityname.toUpperCase();
-        
-        System.out.println("\nNumber of characters: " + letnum);
-        System.out.println("\nUppercase: " + upperc);
-        System.out.println("\nLowercase: " + lowerc);
-        System.out.println("\nFirst character: " + firstc);
+        String cityName = keyboard.nextLine();
+      
+        System.out.println("\nNumber of characters: " + cityName.length() + " characters.");
+        System.out.println("\nUppercase: " + cityName.toUpperCase());
+        System.out.println("\nLowercase: " + cityName.toLowerCase());
+        System.out.println("\nFirst character: " + cityName.charAt(0));
     }
 }
